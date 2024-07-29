@@ -60,7 +60,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
-ROOT_URLCONF = "landingpage.urls"
+ROOT_URLCONF = "mylandingpage.urls"
 
 import os
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
@@ -86,7 +86,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "landingpage.wsgi.application"
+WSGI_APPLICATION = "mylandingpage.wsgi.application"
 
 
 # Database
