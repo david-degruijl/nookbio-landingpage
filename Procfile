@@ -1,0 +1,1 @@
+web: python landingpage/manage.py runserver 0.0.0.0:$PORT
