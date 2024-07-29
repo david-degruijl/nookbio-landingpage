@@ -1,0 +1,13 @@
+# Ignore the staticfiles directory
+landingpage/staticfiles/
+
+# Ignore the database file
+landingpage/db.sqlite3
+
+# Ignore environment files
+.env
+.venv/
+
+# Ignore compiled files
+*.pyc
+__pycache__/
