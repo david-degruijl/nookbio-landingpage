@@ -30,7 +30,12 @@ SECRET_KEY = "django-insecure-*o8c+ru%#sbmz4nj*qf^0yf==cpklycwp_vsad!upw86^xmheo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.nookbio.com', 'nookbio-landingpage.herokuapp.com']
+ALLOWED_HOSTS = ['www.nookbio.com', 'nookbio-landingpage.herokuapp.com', 'nookbio.com',
+                 'localhost',
+                 '127.0.0.1',
+                 '.herokuapp.com',
+                 'nookbio-landingpage-b237f8a313ed.herokuapp.com',  # Add your Heroku app's domain
+                 ]
 
 # Application definition
 
