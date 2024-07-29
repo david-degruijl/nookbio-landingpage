@@ -1,1 +1,1 @@
-web: gunicorn landingpage.wsgi:application
+web: waitress-serve --port=$PORT landingpage.wsgi:application
