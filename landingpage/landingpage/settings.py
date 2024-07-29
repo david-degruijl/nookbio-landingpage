@@ -60,7 +60,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
-ROOT_URLCONF = "landingpage.urls"
+ROOT_URLCONF = "landingpage.landingpage.urls"
 
 import os
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
