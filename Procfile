@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT mylandingpage.wsgi:application
+web: waitress-serve --port=$PORT landingpage.mylandingpage.wsgi:application
