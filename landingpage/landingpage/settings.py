@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-*o8c+ru%#sbmz4nj*qf^0yf==cpklycwp_vsad!upw86^xmheo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nookbio.com', 'www.nookbio.com']
+ALLOWED_HOSTS = ['nookbio.com', 'www.nookbio.com', 'nookbio-landingpage.herokuapp.com']
 
 
 # Application definition
