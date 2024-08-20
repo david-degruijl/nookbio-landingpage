@@ -2,16 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "landingpage/manage.py",
+      "src": "manage.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "landingpage/manage.py"
+      "dest": "manage.py"
     }
   ],
-  "buildCommand": "bash build_files.sh",
-  "outputDirectory": "landingpage"
+  "buildCommand": "bash build_files.sh"
 }
