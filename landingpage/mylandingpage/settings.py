@@ -24,14 +24,23 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
+DEPLOYER = "Vercel"
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-*o8c+ru%#sbmz4nj*qf^0yf==cpklycwp_vsad!upw86^xmheo"
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+if DEPLOYER == "Heroku":
+    # SECURITY WARNING: keep the secret key used in production secret!
+    SECRET_KEY = "django-insecure-*o8c+ru%#sbmz4nj*qf^0yf==cpklycwp_vsad!upw86^xmheo"
 
-ALLOWED_HOSTS = ['www.nookbio.com', 'nookbio-landingpage.herokuapp.com', 'nookbio.com',
+    # SECURITY WARNING: don't run with debug turned on in production!
+    DEBUG = False
+
+if DEPLOYER == "Vercel":
+    SECRET_KEY = os.getenv('SECRET_KEY', 'your-default-secret-key')
+    DEBUG = os.getenv('DEBUG', 'False') == 'True'
+
+
+
+ALLOWED_HOSTS = ['.vercel.app', 'www.nookbio.com', 'nookbio-landingpage.herokuapp.com', 'nookbio.com',
                  'localhost',
                  '127.0.0.1',
                  '.herokuapp.com',

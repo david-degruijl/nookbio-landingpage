@@ -1,0 +1,25 @@
+{
+    "builds": [{
+        "src": "mylandingpage/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize":  "50mb", "runtime":  "python3.8"}
+      },
+      {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "staticfiles_build"
+        }
+      }
+    ],
+    "routes": [
+      {
+      "src": "/comingsoon/static/(.*)",
+      "dest": "/static/$1"
+      },
+      {
+        "src" : "/comingsoon/static/comingsoon/assets/favicon.ico",
+        "dest": "favicon.ico"
+      },
+    ]
+}
