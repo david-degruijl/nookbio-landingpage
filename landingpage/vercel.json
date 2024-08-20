@@ -11,4 +11,6 @@
       "src": "/(.*)",
       "dest": "manage.py"
     }
-  ]
+  ],
+  "buildCommand": "./build_files.sh"
+}
