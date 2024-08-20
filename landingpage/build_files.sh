@@ -1,3 +1,7 @@
-# build_files.sh
+#!/bin/bash
+
+# Install the required dependencies
 pip install -r requirements.txt
-python3.8 manage.py collectstatic
+
+# Collect static files
+python manage.py collectstatic --noinput
