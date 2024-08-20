@@ -117,5 +117,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # CSRF Settings - Add if necessary
 CSRF_TRUSTED_ORIGINS = [
     'https://your-vercel-domain.vercel.app',
-    'https://your-custom-domain.com',
+    'https://nookbio.com',
 ]
