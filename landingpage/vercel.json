@@ -12,5 +12,6 @@
       "dest": "landingpage/manage.py"
     }
   ],
-  "buildCommand": "cd landingpage && ./build_files.sh"
+  "buildCommand": "bash build_files.sh",
+  "outputDirectory": "landingpage"
 }
